@@ -1,11 +1,22 @@
 ## docker-stats-to-influxdb
 
-Get docker statistics (using command **docker stats**) and out to Influx Database for monitoring consumed resources containers via Grafana. Added convert GB/GiB (from rounding) and kB/KiB to MByte.
+Get docker statistics (using command **docker stats**) and out to Influx Database for monitoring consumed resources containers and subsequent visualization in grafana. Added convert GB/GiB (from rounding) and kB/KiB to MByte.
 
 ### Install
 
-**Creat unit file:** /etc/systemd/system/[docker-stats-to-influxdb.service](https://raw.githubusercontent.com/Lifailon/docker-stats-to-influxdb/rsa/docker-stats-to-influxdb.service) \
 **Script path:** /root/[docker-stats-to-influxdb.sh](https://raw.githubusercontent.com/Lifailon/docker-stats-to-influxdb/rsa/docker-stats-to-influxdb.sh)
+
+Variables for settings connect to influxdb server:
+
+```bash
+ip="192.168.3.104" # IP address influx server
+port="8086"        # Port influx server
+db="docker"        # Databases name
+table="stats"      # Measurement
+host=$(hostname)   # Current computer name
+```
+
+**Creat unit file:** /etc/systemd/system/[docker-stats-to-influxdb.service](https://raw.githubusercontent.com/Lifailon/docker-stats-to-influxdb/rsa/docker-stats-to-influxdb.service)
 
 ```bash
 root@netbox-01:~# systemctl daemon-reload

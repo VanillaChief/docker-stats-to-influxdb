@@ -49,14 +49,14 @@ Example original output and after convert
 00.00%  1.12%   21.73MiB/1.895GiB       138kB/555kB     102MB/188kB     6       netbox-docker-postgres-1
 00.09%  0.20%   3.801MiB/1.895GiB       50.5kB/19kB     5.43MB/90.1kB   5       netbox-docker-redis-cache-1
 
-0.00    0.76    14.66/1895.00   		0.00/0.00       20.00/0.00      6       562.00  stage_back.1.x3o95788jnrr9puxy5x0h0arm
-0.11    0.65    12.70/1895.00   		0.84/9.86       34.40/0.00      4       154.00  portainer_agent.rb0eurxmxegg1at1ukcbki6de.scs3y0p57fyjbczx0w6itxya1
-0.00    0.82    15.91/1895.00   		13.20/1.49      35.70/50.50     4       280.00  portainer_portainer.1.ep75bz1qhn2x9tx6js0u1ap39
-0.00    0.96    18.67/1895.00   		1.04/0.15       1370.00/0.00    3       684.00  netbox-docker-netbox-housekeeping-1
-0.09    0.15    2.89/1895.00    		0.02/0.00       3.65/0.00       5       37.80   netbox-docker-redis-1
-0.00    1.12    21.73/1895.00   		0.14/0.56       102.00/0.19     6       237.00  netbox-docker-postgres-1
-0.09    0.20    3.80/1895.00    		0.05/0.02       5.43/0.09       5       37.80   netbox-docker-redis-cache-1
-0.29    4.66    90.36/1895.00   		15.29/12.08     1571.18/50.78   33      1992.6  SUM
+0.00    0.76    14.66/1895.00           0.00/0.00       20.00/0.00      6       562.00  stage_back.1.x3o95788jnrr9puxy5x0h0arm
+0.11    0.65    12.70/1895.00           0.84/9.86       34.40/0.00      4       154.00  portainer_agent.rb0eurxmxegg1at1ukcbki6de.scs3y0p57fyjbczx0w6itxya1
+0.00    0.82    15.91/1895.00           13.20/1.49      35.70/50.50     4       280.00  portainer_portainer.1.ep75bz1qhn2x9tx6js0u1ap39
+0.00    0.96    18.67/1895.00           1.04/0.15       1370.00/0.00    3       684.00  netbox-docker-netbox-housekeeping-1
+0.09    0.15    2.89/1895.00            0.02/0.00       3.65/0.00       5       37.80   netbox-docker-redis-1
+0.00    1.12    21.73/1895.00           0.14/0.56       102.00/0.19     6       237.00  netbox-docker-postgres-1
+0.09    0.20    3.80/1895.00            0.05/0.02       5.43/0.09       5       37.80   netbox-docker-redis-cache-1
+0.29    4.66    90.36/1895.00           15.29/12.08     1571.18/50.78   33      1992.6  SUM
 ```
 
 ### 📊 Influx data

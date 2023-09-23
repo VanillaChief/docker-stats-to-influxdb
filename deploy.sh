@@ -6,6 +6,7 @@ curl https://raw.githubusercontent.com/Lifailon/docker-stats-to-influxdb/rsa/doc
 # Service launch
 systemctl daemon-reload
 systemctl enable docker-stats-to-influxdb.service
+sleep 3
 systemctl restart docker-stats-to-influxdb
 # Get status
 systemctl status docker-stats-to-influxdb

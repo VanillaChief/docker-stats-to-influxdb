@@ -44,7 +44,7 @@ while :
     docker_ps=$(docker ps -s)
     num=$(printf "%s\n" "${docker_stats[@]}" | wc -l)
     # Debug: original output and after convert
-    printf "%s\n" "${docker_stats[@]}" | awk '{print -e $3"\t"$7"\t"$4"/"$6"\t"$8"/"$10"\t"$11"/"$13"\t"$NF"\t"$2}' && echo
+    # printf "%s\n" "${docker_stats[@]}" | awk '{print -e $3"\t"$7"\t"$4"/"$6"\t"$8"/"$10"\t"$11"/"$13"\t"$NF"\t"$2}' && echo
     printf "%s\n" "${docker_stats[@]}" | while read line
         do
         id=$(echo $line | awk '{print $1}')

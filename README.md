@@ -45,6 +45,8 @@ For connect to the Influx database, specify the your values of the variables:
 8 table="stats"      # Measurement
 ```
 
+Or do a fork of the repository, change the variables to connect to the database and run the deploy or use the configuration system to remote start.
+
 ### 📑 Debug output
 
 Example original output and after convert

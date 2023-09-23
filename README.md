@@ -36,6 +36,15 @@ Sep 24 01:21:53 netbox-01 bash[1609432]: 0.09        0.20        3.80/1895.00   
 Sep 24 01:21:53 netbox-01 bash[1609432]: 0.33        4.66        90.38/1895.00       15.39/12.17      1571.18/51.18    33 >
 ```
 
+For connect to the Influx database, specify the your values of the variables:
+
+```bash
+5 ip="192.168.3.104" # IP address influx server
+6 port="8086"        # Port influx server
+7 db="docker"        # Databases name
+8 table="stats"      # Measurement
+```
+
 ### 📑 Debug output
 
 Example original output and after convert

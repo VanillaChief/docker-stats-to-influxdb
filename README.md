@@ -1,6 +1,6 @@
 ## docker-stats-to-influxdb
 
-Script for monitoring Docker containers (using **docker stats and docker ps**) with data sent to Influx database and visualized in Grafana. Added convert GB/GiB (from rounding) and kB/KiB to MB (**all output to MByte**).
+Script for monitoring Docker containers (using **docker stats** and **docker ps**) with data sent to Influx database and visualized in Grafana. Added convert GB/GiB (from rounding) and kB/KiB to MB (**all output to MByte**).
 
 ### 🚀 Install
 
@@ -45,14 +45,14 @@ For connect to the Influx database, specify the your values of the variables:
 8 table="stats"      # Measurement
 ```
 
-Or do a fork of the repository, change the variables to connect to the database and run the deploy or use the configuration system to remote start.
+Or do a [fork](https://github.com/login?return_to=%2FLifailon%2Fdocker-stats-to-influxdb) of the repository, change the variables to connect to the database and run the deploy or use the configuration system to remote start.
 
 ### 📑 Debug output
 
 Example original output and after convert
 
 ```bash
-00.00%  0.76%   14.66MiB/1.895GiB       1.89kB/0B       20MB/0B 6       stage_back.1.x3o95788jnrr9puxy5x0h0arm
+00.00%  0.76%   14.66MiB/1.895GiB       1.89kB/0B       20MB/0B         6       stage_back.1.x3o95788jnrr9puxy5x0h0arm
 00.11%  0.65%   12.7MiB/1.895GiB        836kB/9.86MB    34.4MB/0B       4       portainer_agent.rb0eurxmxegg1at1ukcbki6de.scs3y0p57fyjbczx0w6itxya1
 00.00%  0.82%   15.91MiB/1.895GiB       13.2MB/1.49MB   35.7MB/50.5MB   4       portainer_portainer.1.ep75bz1qhn2x9tx6js0u1ap39
 00.00%  0.96%   18.67MiB/1.895GiB       1.04MB/152kB    1.37GB/0B       3       netbox-docker-netbox-housekeeping-1
@@ -93,3 +93,7 @@ Filtering by **summary load (sum)** in the last one minute:
 Example dashboard for sum all containers
 
 ![Image alt](https://github.com/Lifailon/docker-stats-to-influxdb/blob/rsa/screen/grafana-dashboard-sum.jpg)
+
+Selected container:
+
+![Image alt](https://github.com/Lifailon/docker-stats-to-influxdb/blob/rsa/screen/grafana-dashboard-uptime.jpg)

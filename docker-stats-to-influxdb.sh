@@ -2,7 +2,7 @@
 # Source: https://github.com/Lifailon/docker-stats-to-influxdb
 
 ################# Variables #################
-ip="192.168.3.104" # IP address influx server
+ip="192.168.178.60" # IP address influx server
 port="8086"        # Port influx server
 db="docker"        # Databases name
 table="stats"      # Measurement
